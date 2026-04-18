@@ -3,12 +3,16 @@ __pycache__/
 *.py[cod]
 *.pyo
 .venv/
+.pytest_cache/
+.mypy_cache/
 
 # Local tool/state
 .spectra/
 openspec/.vector-search.db*
 .claude/
 .agents/
+.idea/
+.vscode/
 
 # Environment / secrets
 .env
@@ -17,15 +21,24 @@ openspec/.vector-search.db*
 *.key
 *.p12
 *.pfx
+id_rsa
+id_ed25519
+*.crt
 
 # Runtime artifacts
 *.log
 debug_dom.html
 monitor.log
 full_monitor.log
+*.sqlite
+*.db
 
 # Generated images / screenshots
 qrcode*.png
 shot_*.png
 jimeng_login_page.png
 output/
+
+# OS noise
+.DS_Store
+Thumbs.db

@@ -33,6 +33,19 @@ git clone <repo-url> ~/jimeng-cli
 cd ~/jimeng-cli
 ```
 
+## GitHub 安全上傳提醒
+
+- 不要把任何 Token、Cookie、Session 檔案提交到 Git（例如 `~/.jimeng/session.json`）。
+- 不要提交調試輸出（`*.log`、`debug_dom.html`、QR/截圖檔）。
+- 推送前建議先檢查：
+
+```bash
+git status --short
+rg -n "token|secret|password|api[_-]?key|session" .
+```
+
+- 若曾誤推機敏資料，請立刻作廢並重發憑證，不要只刪檔後繼續使用舊憑證。
+
 ### 3. 安裝 Python 依賴
 
 ```bash
