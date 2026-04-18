@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+
+# Local tool/state
+.spectra/
+openspec/.vector-search.db*
+.claude/
+.agents/
+
+# Environment / secrets
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Runtime artifacts
+*.log
+debug_dom.html
+monitor.log
+full_monitor.log
+
+# Generated images / screenshots
+qrcode*.png
+shot_*.png
+jimeng_login_page.png
+output/
